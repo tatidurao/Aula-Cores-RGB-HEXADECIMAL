@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Minha Pagina de Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: white;
+      }
+
+      .header {
+        background: yellow;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid purple
+      }
+
+      .header h1 {
+        font-size: 28px;
+      }
+
+      .menu a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      h2, p {
+        text-align: center;
+        margin-top: 20px;
+        color: black
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px 20px;
+      }
+
+      /* Cada item vira uma "caixa" 300x300 */
+      .item a {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 8px 20px black;
+        transition: transform 0.15s ease;
+      }
+
+      .item a:hover {
+        transform: translateY(-4px);
+       
+      }
+
+      .item p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      /* Cores RGB diferentes pra cada caixa */
+      .item:nth-child(1) a { background: pink; }
+      /*.item:nth-child(2) a { background:  }
+      .item:nth-child(3) a { background:  }
+      .item:nth-child(4) a { background:  }
+      .item:nth-child(5) a { background:  }
+      .item:nth-child(6) a { background:  }
+      .item:nth-child(7) a { background:  }*/
+
+      .footer {
+        background: black;
+        border-top: 1px solid white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .footer img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Nome do Aluno</h1>
+      <div class="menu">
+        <a href="index.html">Projetos</a>
+        <a href="aboutme.html">Sobre Mim</a>
+      </div>
+    </div>
+
+    <h2>Estes são alguns jogos desenhados por mim</h2>
+    <p>Os jogos usam p5.js, p5.play e bibliotecas matter.js em javascript</p>
+
+    <div class="grid">
+      <div class="item">
+        <a href="https://editor.p5js.org/whitehatjr/present/ePJrHCACM" target="_blank">Jogo 1</a>
+        <p>Jogo do Trex Corredor</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 2</a>
+        <p>Nome do Jogo 2</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 3</a>
+        <p>Nome do Jogo 3</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 4</a>
+        <p>Nome do Jogo 4</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 5</a>
+        <p>Nome do Jogo 5</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 6</a>
+        <p>Nome do Jogo 6</p>
+      </div>
+
+      <div class="item">
+        <a href="#" target="_blank">Jogo 7</a>
+        <p>Jogo do 7</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#"><img src="fb.png" width="50" height="50" /></a>
+      <a href="#"><img src="insta.png" width="50" height="50" /></a>
+      <a href="#"><img src="youtube.png" width="50" height="50" /></a>
+    </div>
+  </body>
+</html>
